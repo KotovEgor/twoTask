@@ -1,14 +1,21 @@
 /**
  * Created by Администратор on 21.06.2016.
  */
-var Blank = Backbone.Model.extend({
+var Person = Backbone.Model.extend({
     defaults:{
         person: "Котов Егор Владимирович",
         job: "Программист",
-        ofWork: "МЭСИ",
+        office: "МЭСИ",
         phone: "89157029579",
         date: "21.06.2016"
 
+    },
+
+    validate: function( attrs ){
+        console.log(attrs);
+        if ( ! attrs.job ){
+            return "Введите должность";
+        }
     }
 
 })
