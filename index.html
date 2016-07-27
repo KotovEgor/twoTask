@@ -11,28 +11,37 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="left">
-        <form class="doc-form">
-            <div class="doc-from__item">
-                <label class="doc-from__label">Введите ФИО</label> <input type="text" class="doc-from__input person">
-            </div>
-            <div class="doc-from__item">
-                <label class="doc-from__label">Должность</label> <input type="text" class="doc-from__input job">
-            </div>
-            <div class="doc-from__item">
-                <label class="doc-from__label">Место работы</label> <input type="text" class="doc-from__input office">
-            </div>
-            <div class="doc-from__item">
-                <label class="doc-from__label">Телефон</label> <input type="text" class="doc-from__input phone">
-            </div>
-            <div class="doc-from__item">
-                <label class="doc-from__label">Дата</label> <input type="text" class="doc-from__input date">
-            </div>
-            <button type="button" class="doc-from__botton">Отправить</button>
-        </form>
-    </div>
+
+    <script type="text/template" id="template-name">
+       <p>Меня зовут <%= name %></p> <p>Я работаю в <%= office %>, на должности <%= job %>.</p>
+       <p class="signature">Мой телефон <%= phone %>.<br />
+       Дата <%= date %></p>
+    </script>
+
     <div class="right">
 
     </div>
+
+    <div class="left">
+        <form id="doc-form">
+            <div class="doc-from__item">
+                <label class="doc-from__label">Введите ФИО</label> <input type="text" class="doc-from__input" id="name">
+            </div>
+            <div class="doc-from__item">
+                <label class="doc-from__label">Должность</label> <input type="text" class="doc-from__input" id="job">
+            </div>
+            <div class="doc-from__item">
+                <label class="doc-from__label">Место работы</label> <input type="text" class="doc-from__input" id="office">
+            </div>
+            <div class="doc-from__item">
+                <label class="doc-from__label">Телефон</label> <input type="text" class="doc-from__input" id="phone">
+            </div>
+            <div class="doc-from__item">
+                <label class="doc-from__label">Дата</label> <input type="text" class="doc-from__input" id="date">
+            </div>
+        </form>
+    </div>
+
+
 </body>
 </html>

@@ -1,6 +1,9 @@
 html, body { height: 100%; font-size: 100%; overflow: hidden; }
-.left { width: 50%; float: left; margin-top: 5%; margin-left: 5%;}
+.left { width: 45%; float: left; margin-top: 5%; margin-left: 5%;}
 .left .doc-from { display: table;}
 .left .doc-from__item { display: table-row;}
 .left .doc-from__label { display: table-cell; padding-right: 10px; padding-bottom: 20px;}
 .left .doc-from__input { display: table-cell; }
+.doc{width:400px;}
+.signature{text-align: right;}
+.right{width: 45%;float: right;margin-top: 5%;margin-left: 5%;}
